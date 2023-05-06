@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Form, Button } from 'antd';
 import { FormComponentProps } from 'antd/lib/form';
-import styles from './index.scss?l';
+import styles from './index.less';
 import { Context } from '../../index.store';
 
 export default Form.create()((props: FormComponentProps) => {

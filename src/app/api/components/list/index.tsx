@@ -3,7 +3,7 @@ import { Button, Divider, Popconfirm, Modal, Icon, message } from 'antd';
 import { Context } from '../../index.store';
 import Table from '@/components/table';
 import { searchApi } from '../../index.model';
-import './index.scss';
+import './index.less';
 import { deleteApi } from '../../index.model';
 // import { getRepositoryFileList } from '@/common/utils/getPbFile';
 // import { PbTranform } from '@/lib/pbTranform';

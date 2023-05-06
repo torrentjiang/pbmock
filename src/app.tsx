@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { render } from 'react-dom';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import Router from './router';
-import styles from './index.scss?l';
+import styles from './index.less';
 import { Layout, Row } from 'antd';
 import Navs from './router/navs';
 import Sider from './components/Layout/sider';

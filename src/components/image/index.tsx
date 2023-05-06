@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import styles from './index.scss?l';
+import styles from './index.less';
 
 export default (props:any) => {
 

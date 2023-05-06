@@ -3,7 +3,7 @@ import { Button, Divider, Popconfirm, message } from 'antd';
 import { Context } from '../../index.store';
 import Table from '@/components/table';
 import { getTeamGroupList } from '../../index.model';
-import './index.scss';
+import './index.less';
 import { deleteGroup } from '../../index.model';
 import Events from '@/common/utils/events';
 

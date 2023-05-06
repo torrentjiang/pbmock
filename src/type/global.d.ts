@@ -8,6 +8,11 @@ declare module '*.scss' {
     export default content;
 }
 
+declare module '*.less' {
+    const classes: { [key: string]: string };
+    export default classes;
+}
+
 declare namespace AMap {
     type MapConf = {
         center: number[];

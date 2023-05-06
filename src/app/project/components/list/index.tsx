@@ -6,7 +6,7 @@ import { searchProject } from '../../index.model';
 import Events from '@/common/utils/events';
 import { deleteProject } from '../../index.model';
 import { withRouter } from 'react-router-dom';
-import './index.scss';
+import './index.less';
 
 type Prop = {
   history: any;

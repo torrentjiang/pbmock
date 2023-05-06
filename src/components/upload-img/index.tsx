@@ -3,7 +3,7 @@ import { Upload, Icon, message } from 'antd';
 import request from '@lib/request';
 import { getApiHost } from '@/config/index';
 const { webapiHost } = getApiHost();
-import styles from './index.scss?l';
+import styles from './index.less';
 
 const uploadAttach = function(params: any) {
   const { file, data } = params;

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Route, Switch, Redirect, Link, withRouter } from 'react-router-dom';
 import load from './ts/load';
 import {INavs} from './navs';
-import styles from './index.scss';
+import styles from './index.less';
 import { RouteComponentProps } from 'react-router';
 import { isLogin } from '@/lib/auth';
 import viewRoute from '@/router/navs/innerNavs/projects';

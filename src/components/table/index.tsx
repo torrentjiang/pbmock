@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Table } from 'antd';
 import { TableProps } from 'antd/lib/table';
 import uuid from 'uuid';
-import styles from './index.scss?l';
+import styles from './index.less';
 
 declare interface queryData {
   current: number;

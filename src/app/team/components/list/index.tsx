@@ -3,7 +3,7 @@ import { Button, Divider, Popconfirm, message } from 'antd';
 import { Context } from '../../index.store';
 import Table from '@/components/table';
 import { getTeam } from '../../index.model';
-import './index.scss';
+import './index.less';
 import { deleteTeam } from '../../index.model';
 
 type Prop = {

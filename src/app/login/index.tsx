@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useContext } from 'react';
 import { Form, Input, Button, Row, Col, Icon, Tabs, Modal, Spin, message } from 'antd';
-import styles from './index.scss?l';
+import styles from './index.less';
 import { RouteComponentProps } from 'react-router';
 import { login } from './index.model';
 

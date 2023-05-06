@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useContext } from 'react';
 import { Button, Icon } from 'antd';
-import styles from './index.scss?l';
+import styles from './index.less';
 
 const ButtonGroup = Button.Group;
 

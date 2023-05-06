@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Menu, Icon } from 'antd';
 import { Context } from '../../../app.store';
-import './index.scss';
+import './index.less';
 
 const Header = Layout.Header;
 

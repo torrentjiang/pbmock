@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './index.scss?l';
+import styles from './index.less';
 
 export default (props:any) => {
 

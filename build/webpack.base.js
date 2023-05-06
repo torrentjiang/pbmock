@@ -12,7 +12,7 @@ const filename = isDev ? '[name]/bundle.js' : '[name]/bundle-[chunkhash:5].js';
 const publicPathHost = isDev ? `http://127.0.0.1:8088` : '';
 
 /**
- * @param {'babel-loader' | 'less-loader' | 'less-loader-modules' | 'sass-loader' | 'css-loader' | 'sass-loader-modules'} loaderName
+ * @param {'babel-loader' | 'less-loader' | 'less-loader-modules' | 'css-loader' } loaderName
  */
 const getLoaderConfig = loaderName => {
     switch (loaderName) {
@@ -22,14 +22,9 @@ const getLoaderConfig = loaderName => {
         case 'less-loader':
             return isDev ? 'style-loader!css-loader?sourceMap=true!less-loader?sourceMap=true' : 'style-loader!css-loader!less-loader';
 
-        case 'sass-loader':
-            return isDev ? 'style-loader!css-loader?sourceMap=true!sass-loader?sourceMap=true' : 'style-loader!css-loader!sass-loader';
-
         case 'css-loader':
             return isDev ? 'style-loader!css-loader?sourceMap=true' : 'style-loader!css-loader';
 
-        case 'sass-loader-modules':
-            return isDev ? 'style-loader!css-loader?modules=true&camelCase=true&localIdentName=[path]_[name]_[local]_[hash:base64:4]&sourceMap=true!sass-loader?sourceMap=true' : 'style-loader!css-loader?modules=true&localIdentName=[hash:base64:5]!sass-loader';
         default:
             break;
     }
@@ -60,14 +55,6 @@ module.exports = {
             test: /\.js$/i,
             loader: getLoaderConfig('babel-loader'),
             exclude: path.resolve(__dirname, '../node_modules/')
-        }, {
-            test: /\.scss$/i,
-            oneOf: [{
-                resourceQuery: /l/,
-                loader: getLoaderConfig('sass-loader-modules')
-            }, {
-                loader: getLoaderConfig('sass-loader')
-            }]
         }, {
             test: /\.less$/i,
             oneOf: [{
