@@ -61,7 +61,7 @@ id命名规范
 
 - 技术栈
 
-  react-hook（不要使用redux、mobox、dva）
+  react antd typescript react-hook 
 
 - 本地开发
   ```
@@ -72,8 +72,7 @@ id命名规范
 
 - 访问地址
   ```
-  http://localhost:8088/#/login
-  http://localhost:8088/#/shop/list
+  http://localhost:8088/#/
   ```
 
 
