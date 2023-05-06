@@ -1,0 +1,1 @@
+// export const relate = (relates: string[]) => void
