@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { render } from 'react-dom';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route, BrowserRouter } from 'react-router-dom';
 import Router from './router';
 import styles from './index.less';
 import { Layout, Row } from 'antd';
@@ -94,7 +94,7 @@ const App = () => {
 
   return (
     <Context.Provider value={store}>
-      <HashRouter basename='/pbmock'>
+      <BrowserRouter basename='/pbmock'>
         <Switch>
           <Route path="/login" component={asyncImport('login')} />
           <div className={styles.wrap}>
@@ -131,7 +131,7 @@ const App = () => {
             </Layout>
           </div>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </Context.Provider>
   );
 };
