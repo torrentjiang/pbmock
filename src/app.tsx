@@ -94,7 +94,7 @@ const App = () => {
 
   return (
     <Context.Provider value={store}>
-      <HashRouter>
+      <HashRouter basename='/pbmock'>
         <Switch>
           <Route path="/login" component={asyncImport('login')} />
           <div className={styles.wrap}>
