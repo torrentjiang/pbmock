@@ -47,7 +47,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../dist/'),
         // publicPath: `${publicPathHost}/dist/`,
-        publicPath: '/pbmock/dist/',
+        publicPath: '/pbmock/',
         chunkFilename: '[name].[chunkhash:5].js',
         filename
     },

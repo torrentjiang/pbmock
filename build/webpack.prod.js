@@ -8,7 +8,7 @@ const baseWebpackConfig = require('./webpack.base.js');
 module.exports = merge(baseWebpackConfig, {
     mode: 'production',
     output: {
-        publicPath: `/pbMock/`,
+        publicPath: `/pbmock/`,
     },
     plugins: [
         new webpack.DefinePlugin({
@@ -16,7 +16,7 @@ module.exports = merge(baseWebpackConfig, {
         }),
         new webpack.optimize.OccurrenceOrderPlugin(true),
         new HtmlWebpackPlugin({
-            vendorJsUrl: '/pbMock/vendor.dll.js',
+            vendorJsUrl: '/pbmock/vendor.dll.js',
             // filename: path.resolve(__dirname, '../src/index.html'),
             template: path.resolve(__dirname, '../src/template/index.html')
         }),
