@@ -9,7 +9,7 @@ import Sider from './components/Layout/sider';
 import Header from './components/Layout/header';
 import Breadcrumb from './components/Layout/breadcrumb';
 import { Context, useStore } from './app.store';
-// import viewRoute from '@/router/navs/innerNavs/projects';
+import viewRoute from '@/router/navs/innerNavs/projects';
 import '@lib/axios-conf';
 import './index.less';
 import load from './router/ts/load';
@@ -67,19 +67,19 @@ const App = () => {
 
   // 初始化 从接口拿菜单
   useEffect(() => {
-    // viewRoute().then(res => {
-      setDynamicRoutes([...staticRoutes]);
-    // });
+    viewRoute().then(res => {
+      setDynamicRoutes([...staticRoutes, res]);
+    });
   }, []);
 
   // 初始化 从接口拿菜单
-  // useEffect(() => {
-  //   refresh &&
-  //     viewRoute().then(res => {
-  //       setDynamicRoutes([...staticRoutes, res]);
-  //       setRefresh(false);
-  //     });
-  // }, [refresh]);
+  useEffect(() => {
+    refresh &&
+      viewRoute().then(res => {
+        setDynamicRoutes([...staticRoutes, res]);
+        setRefresh(false);
+      });
+  }, [refresh]);
 
   // head部分切换
   useEffect(() => {

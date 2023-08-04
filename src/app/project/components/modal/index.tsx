@@ -16,8 +16,8 @@ export default () => {
   const submit = (data: any) => {
     if (modalType === 'add') {
       const queryData = {
-        groupId: getQueryVariable('group'),
-        teamId: getQueryVariable('team'),
+        groupId: getQueryVariable('group') && Number(getQueryVariable('group')),
+        teamId: getQueryVariable('team') && Number(getQueryVariable('team')),
         projectName: data.projectName
       };
       addProject(queryData).then((res: any) => {

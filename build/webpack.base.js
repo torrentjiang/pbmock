@@ -9,7 +9,7 @@ const isDev = NODE_ENV === dev;
 
 const filename = isDev ? '[name]/bundle.js' : '[name]/bundle-[chunkhash:5].js';
 
-const publicPathHost = isDev ? `http://127.0.0.1:8088` : 'pbmock';
+const publicPathHost = isDev ? `http://127.0.0.1:8088` : '';
 
 /**
  * @param {'babel-loader' | 'less-loader' | 'less-loader-modules' | 'css-loader' } loaderName
@@ -46,8 +46,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../dist/'),
-        // publicPath: `${publicPathHost}/dist/`,
-        publicPath: '/pbmock/',
+        publicPath: `${publicPathHost}/dist/`,
+        // publicPath: '/pbmock/',
         chunkFilename: '[name].[chunkhash:5].js',
         filename
     },
