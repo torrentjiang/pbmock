@@ -19,8 +19,8 @@ export function getApiHost() {
   let obj = {
     dev: {
       webapiHost: 'http://47.100.40.140:7009/feInnerNode', //'http://127.0.0.1:7009/feInnerNode' 'http://172.16.28.115:7009/feInnerNode'
-      apiHost: 'http://10.1.20.7:7009/',
-      pageHost: 'http://10.1.20.7:8080/pbMock/#'
+      apiHost: 'http://47.100.40.140:7009/',
+      pageHost: 'http://47.100.40.140:8080/pbMock/#'
     },
     prod: {
       webapiHost: '',
