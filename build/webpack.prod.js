@@ -18,7 +18,8 @@ module.exports = merge(baseWebpackConfig, {
         new HtmlWebpackPlugin({
             vendorJsUrl: '/pbmock/vendor.dll.js',
             // filename: path.resolve(__dirname, '../src/index.html'),
-            template: path.resolve(__dirname, '../src/template/index.html')
+            template: path.resolve(__dirname, '../src/template/index.html'),
+            favicon: './public/favicon.ico'
         }),
         new webpack.DllReferencePlugin({
             context: __dirname,
